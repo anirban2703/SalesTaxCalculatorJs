@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.item-input{
+    display: flex;
+    align-items: center;
+
+}
+.item-input div{
+    padding:0 10px 0 10px;
+}
+
+.container{
+    padding: 5rem;
+}
+
+#addBtn{
+    margin:3rem;
+    border-radius: 1.25rem;
+}
+#productLists li{
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.salesCalculator-heading{
+
+    text-align:center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2.15rem;
+}
+
+
+.submit-print-btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.submit-print-btns button, .dlt-btn{
+    border-radius: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+@media only screen and (max-width:768px) {
+    .item-input{
+        display:block;
+    }
+    .item-input div{
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media print{
+    .submit-print-btns,.add-btn, #productLists, #addBtn, .item-input{
+        display: none;
+        opacity: 0;
+    }
+}
